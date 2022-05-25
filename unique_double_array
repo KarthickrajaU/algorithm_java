@@ -1,0 +1,36 @@
+//find unique in double array
+
+public class unique(){
+//Find unique in double_array
+	public static void find_unique(double[] d) {
+		
+		int len=d.length;
+		String status=null;
+		Arrays.sort(d);
+		for (int i=0;i<len;i++){
+			System.out.println(i);
+
+			float x= (float) d[i];
+			int z=i;
+			int j=i;
+			float count=0;
+			for (;j<len;j++){
+				float y=(float) d[j];
+				
+				if(x==y){
+					count++;
+				}else{
+					break;
+				}
+			}
+			i=j-1;
+			if(count%2==0){
+				status="even";
+			}else{
+				status="odd";
+			}
+			System.out.println(d[z]+","+status+","+count);
+		}
+	}
+}
+
