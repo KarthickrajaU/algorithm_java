@@ -1,6 +1,6 @@
 public class prime(){
 
-//check given number whether prime or not
+//check whether given number is prime or not
 	public void prime_number(int num){
 	
 		if(num==0){System.out.print("zero is neither prime nor not prime number");return;
